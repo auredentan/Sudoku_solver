@@ -7,7 +7,7 @@ from . import Draw_png
 from typing import Any, List
 
 
-def solve_sudoku(img, output_name: str = "sudokusolution", output_path: str = 'output/') -> Any:
+def solve_sudoku(img, output_name = "sudokusolution", output_path = 'output/'):
     """
     A sudoku solver using Linear programming module pulp.
     The solver is quite similar to the one presented in their
@@ -32,7 +32,7 @@ def solve_sudoku(img, output_name: str = "sudokusolution", output_path: str = 'o
     Cols = Sequence
 
     # The boxes list is created, with the row and column index of each square in each box
-    Boxes: List[Any] = []
+    Boxes = []
     for i in range(3):
         for j in range(3):
             Boxes += [[(Rows[3 * i + k], Cols[3 * j + l]) for k in range(3) for l in range(3)]]
