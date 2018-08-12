@@ -8,6 +8,8 @@ To install just do:
 pip install -r requirements.txt
 ```
 
+You will also need tesseract installed on your machine, for that see the [tesseract github](https://github.com/tesseract-ocr/tesseract/wiki)
+
 Then run the solver on the sudoku you want to solve
 
 ```
